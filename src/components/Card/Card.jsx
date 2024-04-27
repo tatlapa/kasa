@@ -7,7 +7,6 @@ const Card = () => {
     <section className="cards-container">
       <div className="cards">
         {datas.map((data) => {
-          console.log(data.id);
           return (
             <Link key={data.id} to={`/store/${data.id}`} className="card">
               <img src={data.cover} className="card-cover"></img>
