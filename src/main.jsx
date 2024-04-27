@@ -4,10 +4,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './pages/Home.jsx'
-import Store from './pages/Store.jsx'
-import About from './pages/About.jsx'
+import Home from './pages/Home/Home.jsx'
+import Store from './pages/Store/Store.jsx'
+import About from './pages/About/About.jsx'
 import './main.scss'
+import Error404 from './pages/Error404/Error404.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/error404",
+    element: <Error404 />,
   },
 ]);
 
