@@ -1,52 +1,22 @@
 import "./Card.scss";
 import { Link } from "react-router-dom";
+import datas from "../../datas/data.json";
 
 const Card = () => {
   return (
-    <>
-      <section className="cards-container">
-        <div className="cards">
-          <div className="card">
-            <Link to="/store">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur est consectetur placeat atque assumenda sint cum unde.
-              Fuga, similique placeat, repudiandae officia nihil distinctio
-              commodi cupiditate quia voluptatem rem dolores.
+    <section className="cards-container">
+      <div className="cards">
+        {datas.map((data) => {
+          console.log(data.id);
+          return (
+            <Link key={data.id} to={`/store/${data.id}`} className="card">
+              <img src={data.cover} className="card-cover"></img>
+              <h2 className="card-title">{data.title}</h2>
             </Link>
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            est consectetur placeat atque assumenda sint cum unde. Fuga,
-            similique placeat, repudiandae officia nihil distinctio commodi
-            cupiditate quia voluptatem rem dolores.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            est consectetur placeat atque assumenda sint cum unde. Fuga,
-            similique placeat, repudiandae officia nihil distinctio commodi
-            cupiditate quia voluptatem rem dolores.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            est consectetur placeat atque assumenda sint cum unde. Fuga,
-            similique placeat, repudiandae officia nihil distinctio commodi
-            cupiditate quia voluptatem rem dolores.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            est consectetur placeat atque assumenda sint cum unde. Fuga,
-            similique placeat, repudiandae officia nihil distinctio commodi
-            cupiditate quia voluptatem rem dolores.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            est consectetur placeat atque assumenda sint cum unde. Fuga,
-            similique placeat, repudiandae officia nihil distinctio commodi
-            cupiditate quia voluptatem rem dolores.
-          </div>
-        </div>
-      </section>
-    </>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

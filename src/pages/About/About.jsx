@@ -7,7 +7,7 @@ const About = () => {
     <>
       <Navbar />
       <div className="about-container">
-        <Banner image="../src/assets/carroussel-about.jpeg" title=""/>
+        <Banner image="../src/assets/about.jpeg" title=""/>
         <Footer />
       </div>
     </>

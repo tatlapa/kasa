@@ -1,4 +1,6 @@
 import './Banner.scss'
+import PropTypes from "prop-types";
+
 
 const Banner = (props) => {
 
@@ -12,7 +14,6 @@ const Banner = (props) => {
   )
 }
 
-import PropTypes from "prop-types";
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Banner image="../src/assets/carroussel-home.png" title="Chez vous, partout et ailleurs"/>
+      <Banner image="../src/assets/home.png" title="Chez vous, partout et ailleurs"/>
       <Card />
       <Footer />
     </div>
