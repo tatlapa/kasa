@@ -1,11 +1,12 @@
-import './Banner.css'
+import './Banner.scss'
 
 const Banner = () => {
 
   return (
-    <>
-      <div>
-        <h1>test</h1>
+    <>  
+        <div className="banner">
+        <img src="./src/assets/banner.png" className="banner-img" alt="" />    
+        <h1>Chez vous, partout et ailleurs</h1>
         </div>
     </>
   )

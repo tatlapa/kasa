@@ -1,6 +1,6 @@
-import './Footer.css'
+import './Header.css'
 
-const Footer = () => {
+const Header = () => {
 
   return (
     <>
@@ -11,4 +11,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Header

@@ -1,14 +1,16 @@
-import './Footer.css'
+import "./Footer.scss";
 
 const Footer = () => {
-
   return (
     <>
-      <div>
-        <h1>test</h1>
+      <div className="footer">
+        <div className="credits">
+          <img src="./src/assets/logo.svg" className="logo" alt="logo" />
+          <p>© 2021 Huddle. All rights reserved</p>
         </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

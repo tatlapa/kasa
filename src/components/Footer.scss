@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 122px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 29px;
+}
