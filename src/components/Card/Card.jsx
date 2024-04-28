@@ -9,6 +9,7 @@ const Card = () => {
         {datas.map((data) => {
           return (
             <Link key={data.id} to={`/store/${data.id}`} className="card">
+              <div className="card-gradient"></div>
               <img src={data.cover} className="card-cover"></img>
               <h2 className="card-title">{data.title}</h2>
             </Link>
