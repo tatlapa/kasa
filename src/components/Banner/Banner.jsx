@@ -16,9 +16,9 @@ const Banner = (props) => {
 
 
 Banner.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   title: PropTypes.string,
-  opacity: PropTypes.number,
+  opacity: PropTypes.string,
 };
 
 export default Banner

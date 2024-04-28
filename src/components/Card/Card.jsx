@@ -4,7 +4,7 @@ import datas from "../../datas/data.json";
 
 const Card = () => {
   return (
-    <section className="cards-container">
+    <div className="cards-container">
       <div className="cards">
         {datas.map((data) => {
           return (
@@ -15,7 +15,7 @@ const Card = () => {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 
