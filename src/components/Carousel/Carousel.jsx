@@ -21,10 +21,10 @@ const Carousel = ({ images }) => {
           onClick={prevSlide}
           className="arrow arrow-left"
         />
-        {images.map((item, index) => {
+        {images.map((image, index) => {
           return (
             <img
-              src={images}
+              src={image}
               key={index}
               className={slide === index ? "slide" : "slide slide-hidden"}
             />
@@ -34,6 +34,19 @@ const Carousel = ({ images }) => {
           onClick={nextSlide}
           className="arrow arrow-right"
         />
+        <span className="indicators">
+        {images.map((_, index) => {
+          return (
+            <button
+              key={index}
+              className={
+                slide === index ? "indicator" : "indicator indicator-inactive"
+              }
+              onClick={() => setSlide(index)}
+            ></button>
+          );
+        })}
+      </span>
       </div>
     </>
   );
