@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
-import datas from "../../datas/data.json";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Carousel from "../../components/Carousel/Carousel";
+import datas from "../../datas/data.json";
 import Details from "../../components/Details/Details";
 
 const Store = () => {
@@ -24,8 +24,6 @@ const Store = () => {
         name={accomodation.host.name}
         picture={accomodation.host.picture}
         rating={Number(accomodation.rating)}
-        description={accomodation.description}
-        equipments={accomodation.equipments}
       />
       <Footer />
     </>
