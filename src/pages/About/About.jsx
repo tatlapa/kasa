@@ -8,7 +8,6 @@ const About = () => {
   return (
     <>
       <Navbar />
-
       <Banner image="../src/assets/about.jpeg" title="" opacity={Number(0.6)} />
       <div className="about-dropdown">
         <div className="about-container-dropdown">
