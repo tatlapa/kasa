@@ -1,0 +1,35 @@
+.dropdown-container {
+  background-color: #ff6060;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.dropdown-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-title h2 {
+  font-size: 18px;
+}
+
+.dropdown-icon {
+  color: white;
+  width: 32px;
+}
+
+.dropdown-content {
+  background-color: #f6f6f6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-text {
+  color: #ff6060;
+  font-size: 19px;
+}
