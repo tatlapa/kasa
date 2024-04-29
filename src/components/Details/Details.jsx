@@ -24,7 +24,7 @@ const Details = (props) => {
             <p>{props.name}</p>
             <img className="details-img" src={props.picture} alt="" />
           </div>
-          <Stars />
+          <Stars rating={props.rating}/>
         </div>
       </div>
     </>
@@ -38,6 +38,7 @@ Details.propTypes = {
   name: PropTypes.string,
   picture: PropTypes.string,
   accomodation: PropTypes.object,
+  rating: PropTypes.number,
 };
 
 export default Details;

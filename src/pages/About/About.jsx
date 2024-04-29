@@ -7,7 +7,7 @@ const About = () => {
     <>
       <Navbar />
       <div className="about-container">
-        <Banner image="../src/assets/about.jpeg" title="" opacity="0.3"/>
+        <Banner image="../src/assets/about.jpeg" title="" opacity={Number(0.6)}/>
         <Footer />
       </div>
     </>

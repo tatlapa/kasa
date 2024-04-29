@@ -23,6 +23,7 @@ const Store = () => {
         tags={accomodation.tags}
         name={accomodation.host.name}
         picture={accomodation.host.picture}
+        rating={Number(accomodation.rating)}
       />
       <Footer />
     </>
