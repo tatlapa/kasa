@@ -17,10 +17,7 @@ const Carousel = ({ images }) => {
   return (
     <>
       <div className="carousel">
-        <ChevronLeftIcon
-          onClick={prevSlide}
-          className="arrow arrow-left"
-        />
+        <ChevronLeftIcon onClick={prevSlide} className="arrow arrow-left" />
         {images.map((image, index) => {
           return (
             <img
@@ -30,23 +27,10 @@ const Carousel = ({ images }) => {
             />
           );
         })}
-        <ChevronRightIcon
-          onClick={nextSlide}
-          className="arrow arrow-right"
-        />
-        <span className="indicators">
-        {images.map((_, index) => {
-          return (
-            <button
-              key={index}
-              className={
-                slide === index ? "indicator" : "indicator indicator-inactive"
-              }
-              onClick={() => setSlide(index)}
-            ></button>
-          );
-        })}
-      </span>
+        <ChevronRightIcon onClick={nextSlide} className="arrow arrow-right" />
+        <div className="image-counter">
+          {slide + 1}/{images.length}
+        </div>
       </div>
     </>
   );
