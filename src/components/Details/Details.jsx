@@ -1,5 +1,6 @@
 import "./Details.scss";
 import Stars from "../Stars/Stars";
+import Dropdown from "../Dropdown/Dropdown";
 import PropTypes from "prop-types";
 
 const Details = (props) => {
@@ -22,9 +23,25 @@ const Details = (props) => {
         <div className="details-wrapper2">
           <div className="details-wrapper3">
             <p>{props.name}</p>
-            <img className="details-img" src={props.picture} alt="" />
+            <img className="details-img" src={props.picture} alt="image" />
           </div>
-          <Stars rating={props.rating}/>
+          <Stars rating={props.rating} />
+        </div>
+      </div>
+      <div className="details-dropdown">
+        <div className="details-container-dropdown">
+          <Dropdown
+            label="Description"
+            content={props.description}
+            className="details-content-dropdown"
+          />
+        </div>
+        <div className="details-container-dropdown">
+          <Dropdown
+            label="Équipements"
+            content={props.equipments}
+            className="details-content-dropdown"
+          />
         </div>
       </div>
     </>
@@ -39,6 +56,9 @@ Details.propTypes = {
   picture: PropTypes.string,
   accomodation: PropTypes.object,
   rating: PropTypes.number,
+  label: PropTypes.string,
+  description: PropTypes.string,
+  equipments: PropTypes.string,
 };
 
 export default Details;
