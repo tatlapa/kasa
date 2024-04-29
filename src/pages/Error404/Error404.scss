@@ -26,3 +26,19 @@
 .error404-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+  .error404-title {
+    font-size: 96px;
+  }
+  .error404-container {
+    gap: 113px;
+  }
+  .error404-text {
+    font-size: 18px;
+  }
+  .error404-link {
+    font-size: 14px
+  }
+}
+

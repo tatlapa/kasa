@@ -18,3 +18,10 @@
   color: white;
   padding-top: 30px;
 }
+
+@media (max-width: 640px) {
+  
+  .credits {
+    font-size: 12px;
+  }
+}

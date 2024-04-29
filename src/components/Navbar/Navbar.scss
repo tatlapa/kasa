@@ -22,4 +22,19 @@
   text-decoration: underline;
 }
 
+@media (max-width: 640px) {
 
+  .navbar {
+    margin: 30px 20px;
+  }
+
+  .navbar-logo {
+    width: 145px;
+    height: 45px;
+  }
+
+  .navbar-links {
+    gap: 26px;
+    font-size: 12px;
+  }
+}
