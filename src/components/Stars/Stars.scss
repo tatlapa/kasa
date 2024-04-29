@@ -1,0 +1,14 @@
+.stars-container {
+    display: flex;
+    margin-top: 0;
+  }
+  
+  .star-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #e3e3e3;
+  }
+  
+  .star-icon-active {
+    color: #ff6060;
+  }
