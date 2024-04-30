@@ -5,10 +5,14 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <img className="navbar-logo" src="../src/assets/logo.png" alt="logo-navbar" />
+        <img
+          className="navbar-logo"
+          src="/kasa/src/assets/logo.png"
+          alt="logo-navbar"
+        />
         <ul className="navbar-links">
           <li>
-            <Link to="/">Accueil</Link>
+            <Link to="/kasa">Accueil</Link>
           </li>
           <li>
             <Link to="/about">A Propos</Link>

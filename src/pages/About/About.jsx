@@ -9,7 +9,11 @@ const About = () => {
     <>
       <Navbar />
 
-      <Banner image="../src/assets/about.jpeg" title="" opacity={Number(0.6)} />
+      <Banner
+        image="/kasa/src/assets/about.jpeg"
+        title=""
+        opacity={Number(0.6)}
+      />
       <div className="about-dropdown">
         <div className="about-container-dropdown">
           <Dropdown
