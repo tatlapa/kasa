@@ -13,11 +13,11 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/store/:id",
+    path: "/kasa/store/:id",
     element: <Store />,
   },
   {
-    path: "/about",
+    path: "/kasa/about",
     element: <About />,
   },
   {
