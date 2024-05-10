@@ -12,7 +12,7 @@ const Details = (props) => {
           <h2 className="details-title">{props.title}</h2>
           <p className="details-location">{props.location}</p>
           <div>
-            <Tag tags={props.tags}/>
+            <Tag tags={props.tags} />
           </div>
         </div>
         <div className="details-wrapper2">
@@ -48,7 +48,7 @@ Details.propTypes = {
   location: PropTypes.string,
   name: PropTypes.string,
   picture: PropTypes.string,
-  tags: PropTypes.object,
+  tags: PropTypes.arrayOf(PropTypes.string),
   rating: PropTypes.number,
   label: PropTypes.string,
   description: PropTypes.string,
