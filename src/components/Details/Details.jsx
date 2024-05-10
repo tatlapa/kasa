@@ -2,6 +2,7 @@ import "./Details.scss";
 import Stars from "../Stars/Stars";
 import Dropdown from "../Dropdown/Dropdown";
 import PropTypes from "prop-types";
+import Tag from "../Tag/Tag";
 
 const Details = (props) => {
   return (
@@ -11,13 +12,7 @@ const Details = (props) => {
           <h2 className="details-title">{props.title}</h2>
           <p className="details-location">{props.location}</p>
           <div>
-            {props.tags.map((tag) => {
-              return (
-                <span className="details-tag" key={tag}>
-                  {tag}
-                </span>
-              );
-            })}
+            <Tag tags={props.tags}/>
           </div>
         </div>
         <div className="details-wrapper2">
@@ -51,14 +46,13 @@ const Details = (props) => {
 Details.propTypes = {
   title: PropTypes.string,
   location: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
   name: PropTypes.string,
   picture: PropTypes.string,
-  accomodation: PropTypes.object,
+  tags: PropTypes.object,
   rating: PropTypes.number,
   label: PropTypes.string,
   description: PropTypes.string,
-  equipments: PropTypes.string,
+  equipments: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Details;
