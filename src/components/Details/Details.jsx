@@ -11,7 +11,7 @@ const Details = (props) => {
         <div className="details-wrapper1">
           <h2 className="details-title">{props.title}</h2>
           <p className="details-location">{props.location}</p>
-          <div>
+          <div className="details-tag">
             <Tag tags={props.tags} />
           </div>
         </div>

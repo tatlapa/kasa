@@ -1,8 +1,6 @@
 .banner {
   position: relative;
-  color: white;
   margin: 50px 100px;
-  text-align: center;
 }
 
 .gradient {
@@ -20,13 +18,13 @@
 }
 
 .banner-title {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 48px;
-  white-space: nowrap;
+  font-size: 42px;
 }
 
 @media (max-width: 640px) {
@@ -44,5 +42,6 @@
 
   .banner-title {
     font-size: 24px;
+    left: 35%;
   }
 }

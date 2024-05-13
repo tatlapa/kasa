@@ -12,13 +12,13 @@
   list-style: none;
 }
 
-.navbar-links a {
+.navbar-link {
   color: black;
   text-decoration: none;
 }
 
-.navbar-links a:hover {
-  color: black;
+.navbar-link:hover,
+.navbar-link--active {
   text-decoration: underline;
 }
 
