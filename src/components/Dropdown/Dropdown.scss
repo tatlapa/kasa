@@ -7,7 +7,7 @@
   display: block;
 }
 
-.dropdown-title {
+.dropdown-title-container {
   color: white;
   display: flex;
   align-items: center;
@@ -23,6 +23,10 @@
   width: 32px;
 }
 
+.dropdown-list {
+  list-style: none;
+}
+
 .dropdown-content {
   background-color: #f6f6f6;
   border-bottom-left-radius: 8px;
@@ -31,7 +35,20 @@
 }
 
 .dropdown-text {
-  color: #ff6060;
   font-size: 19px;
 }
 
+@media (max-width: 768px) {
+  .dropdown-text {
+    font-size: 14px;
+  }
+  .dropdown-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dropdown-title {
+    font-size: 18px;
+  }
+}

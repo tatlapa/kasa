@@ -13,3 +13,22 @@
   .star-icon-active {
     color: #ff6060;
   }
+
+  @media (max-width: 1024px) {
+    .star-icon {
+      width: 25px;
+      height: 25px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .star-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .stars-container {
+      gap: 5px;
+    }
+  }

@@ -11,7 +11,7 @@ const Dropdown = (props) => {
   const renderContent = () => {
     if (Array.isArray(props.content)) {
       return (
-        <ul>
+        <ul className="dropdown-list">
           {props.content.map((item, index) => (
             <li key={index} className="dropdown-text">
               {item}
@@ -29,8 +29,8 @@ const Dropdown = (props) => {
         className={`dropdown-container ${props.className}`}
         onClick={toggleDropdown}
       >
-        <div className="dropdown-title">
-          <h2>{props.label}</h2>
+        <div className="dropdown-title-container">
+          <h2 className="dropdown-title">{props.label}</h2>
           {isOpen ? (
             <ChevronUpIcon className="dropdown-icon" />
           ) : (

@@ -27,17 +27,19 @@
   font-size: 42px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .banner {
     margin: 30px 20px;
   }
 
   .banner-img {
     height: 111px;
+    border-radius: 10px;
   }
 
   .gradient {
     height: 111px;
+    border-radius: 10px;
   }
 
   .banner-title {
