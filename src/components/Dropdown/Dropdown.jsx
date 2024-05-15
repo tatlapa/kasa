@@ -38,7 +38,11 @@ const Dropdown = (props) => {
           )}
         </div>
       </div>
-      {isOpen && <div className={`dropdown-content ${props.className}`}>{renderContent()}</div>}
+      {isOpen && (
+        <div className={`dropdown-content ${props.className}`}>
+          {renderContent()}
+        </div>
+      )}
     </>
   );
 };

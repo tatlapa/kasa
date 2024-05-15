@@ -12,7 +12,7 @@ const Error404 = () => {
         <p className="error404-text">
           Oups! La page que vous demandez n’existe pas.
         </p>
-        <Link to="/" className="error404-link">
+        <Link to="/kasa" className="error404-link">
           Retourner sur la page d’accueil
         </Link>
       </div>

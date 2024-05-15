@@ -1,23 +1,21 @@
 import "./Card.scss";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import datas from "../../datas/data.json";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="cards-container">
-      <div className="cards">
-        {datas.map((data) => {
-          return (
-            <Link key={data.id} to={`/kasa/store/${data.id}`} className="card">
-              <div className="card-gradient"></div>
-              <img src={data.cover} className="card-cover"></img>
-              <h2 className="card-title">{data.title}</h2>
-            </Link>
-          );
-        })}
-      </div>
-    </div>
+    <Link key={props.id} to={`/kasa/store/${props.id}`} className="card">
+      <div className="card-gradient"></div>
+      <img src={props.cover} className="card-cover"></img>
+      <h2 className="card-title">{props.title}</h2>
+    </Link>
   );
+};
+
+Card.propTypes = {
+  id: PropTypes.string,
+  cover: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Card;
