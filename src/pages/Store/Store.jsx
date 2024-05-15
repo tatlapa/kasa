@@ -20,7 +20,6 @@ const Store = () => {
       <Details
         title={accomodation.title}
         location={accomodation.location}
-        tags={accomodation.tags}
         name={accomodation.host.name}
         picture={accomodation.host.picture}
         rating={Number(accomodation.rating)}

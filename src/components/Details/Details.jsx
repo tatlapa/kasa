@@ -3,8 +3,13 @@ import Stars from "../Stars/Stars";
 import Dropdown from "../Dropdown/Dropdown";
 import PropTypes from "prop-types";
 import Tag from "../Tag/Tag";
+import datas from "../../datas/data.json";
+import { useParams } from "react-router-dom";
 
 const Details = (props) => {
+  const { id } = useParams();
+  const accomodation = datas.find((accomodation) => accomodation.id === id);
+
   return (
     <>
       <div className="details-container">
@@ -12,7 +17,9 @@ const Details = (props) => {
           <h2 className="details-title">{props.title}</h2>
           <p className="details-location">{props.location}</p>
           <div className="details-tag">
-            <Tag tags={props.tags} />
+            {accomodation.tags.map((tag) => (
+              <Tag key={tag} name={tag} />
+            ))}
           </div>
         </div>
         <div className="details-wrapper2">
