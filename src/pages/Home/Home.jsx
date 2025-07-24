@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar.jsx";
 import Card from "../../components/Card/Card.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import datas from "../../datas/data.json";
+import homeImage from "../../assets/home.png";
 import "./Home.scss";
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Banner
-        image="/kasa/src/assets/home.png"
+        image={homeImage}
         title="Chez vous, partout et ailleurs"
         opacity={Number(0.6)}
       />

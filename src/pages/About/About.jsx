@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import Dropdown from "../../components/Dropdown/Dropdown";
+import aboutImage from "../../assets/about.jpeg";
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       <Navbar />
 
       <Banner
-        image="/kasa/src/assets/about.jpeg"
+        image={aboutImage}
         title=""
         opacity={Number(0.6)}
       />

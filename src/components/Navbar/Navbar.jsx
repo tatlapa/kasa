@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -11,7 +12,7 @@ const Navbar = () => {
       <nav className="navbar">
         <img
           className="navbar-logo"
-          src="/kasa/src/assets/logo.png"
+          src={logo}
           alt="logo-navbar"
         />
         <ul className="navbar-links">
